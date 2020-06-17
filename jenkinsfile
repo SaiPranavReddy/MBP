@@ -1,14 +1,14 @@
 node {
   stage("Create a File") {
-    sh 'touch file1.txt'
+    bat 'touch file1.txt'
   }
   
   stage("List contents") {
-    sh 'ls -a'
+    bat 'ls -a'
   }
   
   stage("Delete File") {
-    sh 'rm file1.txt'
+    bat 'rm file1.txt'
   }
   
 }
