@@ -1,14 +1,14 @@
 node {
   stage("Saying Hi..") {
-    sh 'echo "Hi Pranav..."'
+    bat 'echo "Hi Pranav..."'
   }
   
   stage("Create Greetings file") {
-    sh 'echo "Hello Pranav... Greeting are written..." >> greetings.txt'
+    bat 'echo "Hello Pranav... Greeting are written..." >> greetings.txt'
   }
   
   stage("Printing file contents") {
-    sh 'cat greetings.txt'
+    bat 'cat greetings.txt'
   }
   
 }
