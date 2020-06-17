@@ -8,7 +8,7 @@ node {
   }
   
   stage("Printing file contents") {
-    bat 'cat greetings.txt'
+    bat 'type greetings.txt'
   }
   
 }
