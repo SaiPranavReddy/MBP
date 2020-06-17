@@ -1,0 +1,11 @@
+node {
+  stage("Make Directory") {
+    bat 'mkdir folder1'
+  }
+  stage("List Contents") {
+    bat 'ls -a'
+  }
+  stage("Remove Directort") {
+    bat 'rmdir folder1'
+  }
+}
